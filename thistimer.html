@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+</head>
+<body>
+
+<div id="mycounter"></div>
+</body>
+
+<script>
+
+i = 60;
+function myTimer() {
+document.getElementById('mycounter').innerHTML = i;
+i--;
+
+if (i < 0) {
+alert('Time Up');
+}
+else {
+setTimeout(myTimer, 1000);
+}
+}
+
+myTimer();
+
+
+
+</script>
+</html>
